@@ -1,10 +1,17 @@
-const Nav = ({ isNavOpen }) => {
-  const items = ["home", "about", "projects", "contact"];
+const Nav = ({ isNavOpen, setIsNavOpen }) => {
+  const items = ["home", "skills", "about", "projects", "contact"];
   return (
     <ul className={`nav ${isNavOpen && "min-nav"}`}>
       {items.map((item) => (
         <li key={item}>
-          <a href={`#${item}`}>{item.toUpperCase()}</a>
+          <a
+            href={`#${item}`}
+            onClick={() => {
+              setIsNavOpen(!isNavOpen);
+            }}
+          >
+            {item.toUpperCase()}
+          </a>
         </li>
       ))}
     </ul>

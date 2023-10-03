@@ -26,7 +26,7 @@ const NavBar = ({ isNavOpen, setIsNavOpen }) => {
           }}
         />
       )}
-      <Nav isNavOpen={isNavOpen} />
+      <Nav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
     </nav>
   );
 };

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import NavBar from "./components/NavBar";
-import profile from "./assets/profile.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faGithub,
   faLinkedin,
@@ -19,6 +18,8 @@ import nodejs from "./assets/node-js.svg";
 import express from "./assets/express.svg";
 import mongodb from "./assets/mongodb.svg";
 import sql from "./assets/sql.svg";
+import Skills from "./components/Skills";
+import Home from "./components/Home";
 
 const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -44,75 +45,13 @@ const App = () => {
   return (
     <div>
       <NavBar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      <div className="home" id="#home">
-        <div className="container">
-          <div className="header home-header">
-            <h1 className="big-header">Full-Stack MERN Developer</h1>
-            <p className="description">
-              Hi, I{"'"}m Daniel Endaylalu. A passionate Full-stack Mern
-              Developer.
-            </p>
-            <div className="links">
-              {links.map((link) => (
-                <a
-                  href={link.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key={link.link}
-                >
-                  <FontAwesomeIcon icon={link.icon} />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="cover home-cover">
-            <img src={profile} alt="illustration" />
-          </div>
-        </div>
-        <div className="skills">
-          <h2 className="md-header">Skills</h2>
-          <div className="skill-icons">
-            <h3>Frontend-stack</h3>
-            <div className="icons">
-              {frontSkills.map((skill) => (
-                <div key={skill} className="icon">
-                  <img src={skill} alt="skills" />
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="skill-icons">
-            <h3>Frameworks</h3>
-            <div className="icons">
-              {frameworkSkills.map((skill) => (
-                <div key={skill} className="icon">
-                  <img src={skill} alt="skills" />
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="skill-icons">
-            <h3>Backend-stack</h3>
-            <div className="icons">
-              {backSkills.map((skill) => (
-                <div key={skill} className="icon">
-                  <img src={skill} alt="skills" />
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="skill-icons">
-            <h3>Database</h3>
-            <div className="icons">
-              {databaseSkills.map((skill) => (
-                <div key={skill} className="icon">
-                  <img src={skill} alt="skills" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      <Home links={links} />
+      <Skills
+        frontSkills={frontSkills}
+        backSkills={backSkills}
+        frameworkSkills={frameworkSkills}
+        databaseSkills={databaseSkills}
+      />
     </div>
   );
 };
