@@ -20,6 +20,7 @@ import mongodb from "./assets/mongodb.svg";
 import sql from "./assets/sql.svg";
 import Skills from "./components/Skills";
 import Home from "./components/Home";
+import About from "./components/About";
 
 const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -52,6 +53,7 @@ const App = () => {
         frameworkSkills={frameworkSkills}
         databaseSkills={databaseSkills}
       />
+      <About />
     </div>
   );
 };
