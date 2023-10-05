@@ -10,13 +10,18 @@ const About = () => {
           </h3>
           <p className="description">
             As a Full-stack Developer, I possess an impressive arsenal of skills
-            in HTML, CSS, JavaScript, React, Redux, Tailwind, Node.js, Express,
-            Mongodb and Sql. I excel in designing and maintaining responsive
-            websites that offer a smooth user experience. My expertise lies in
-            crafting dynamic, engaging interfaces through writing clean and
-            optimized code and utilizing cutting-edge development tools and
-            techniques. I am also a team player who thrives in collaborating
-            with cross-functional teams to produce outstanding web applications.
+            in HTML, Css, JavaScript, React, Redux, Tailwind, Node.js, Express,
+            Mongodb and Sql. I excel in designing, developing, and maintaining
+            responsive websites and applications that offer a seamless user
+            experience. My expertise lies in crafting dynamic, engaging
+            interfaces through writing clean, optimized code and utilizing
+            cutting-edge full-stack development tools and techniques. I am
+            proficient in both front-end and back-end development, including
+            database management and server-side programming. I am also a team
+            player who thrives in collaborating with cross-functional teams to
+            produce outstanding web applications. My comprehensive understanding
+            of the MERN stack allows me to handle projects from conception to
+            deployment, ensuring high performance and reliability.
           </p>
         </div>
         <div className="cover home-cover">

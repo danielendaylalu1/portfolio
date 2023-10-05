@@ -21,16 +21,16 @@ a {
 }
 .big-header {
   color: #2d2e32;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 1000;
 }
 .md-header {
-  font-size: 35px;
+  font-size: 30px;
   margin: 10px 0;
 }
 .description {
   color: #555;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 15px;
 }
 .description span {
@@ -45,14 +45,15 @@ h3 span {
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .header {
-  max-width: 650px;
+  max-width: 550px;
 }
 .cover {
-  width: 60%;
-  min-width: 420px;
+  width: 40%;
+  min-width: 320px;
 }
 .cover img {
   height: 100%;
@@ -67,6 +68,9 @@ h3 span {
   font-size: 35px;
   cursor: pointer;
   color: #2d2e32;
+}
+.links a:hover {
+  color: #0f0f0f;
 }
 
 .navbar {
@@ -95,14 +99,17 @@ h3 span {
 }
 .navbar .nav {
   display: flex;
-  gap: 28px;
+  gap: 20px;
   list-style-type: none;
 }
 .nav a {
+  font-size: 14px;
+}
+.nav a:hover {
   font-weight: 600;
 }
 .home {
-  padding: 80px 40px;
+  padding: 80px;
 }
 .skills {
   text-align: center;
@@ -120,25 +127,28 @@ h3 span {
 }
 .skill-icons .icons {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   align-items: center;
-  justify-content: start;
 }
 .skill-icons .icon {
   cursor: pointer;
-  max-width: 65px;
-  max-height: 65px;
+  width: 50px;
+  height: 50px;
 }
 .skill-icons .icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .about {
   background-color: white;
-  padding: 80px 20px;
+  padding: 80px;
 }
 @media only screen and (max-width: 780px) {
+  .about,
+  .home {
+    padding: 60px 20px;
+  }
   .container {
     flex-direction: column;
     gap: 50px;
@@ -151,7 +161,7 @@ h3 span {
     transition: left 0.2s ease-in-out;
     position: absolute;
     padding: 20px;
-    top: 75px;
+    top: 68px;
     left: -100%;
     width: 100%;
     display: flex;
@@ -184,5 +194,24 @@ h3 span {
   }
   .description {
     font-size: 16px;
+  }
+  .skill-icons .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .skill-icons .icons {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .cover {
+    min-width: 200px;
+  }
+  .skill-icons .icon {
+    width: 28px;
+    height: 28px;
+  }
+  .skill-icons .icons {
+    gap: 15px;
   }
 }
