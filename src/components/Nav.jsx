@@ -1,5 +1,5 @@
 const Nav = ({ isNavOpen }) => {
-  const items = ["home", "skills", "about", "projects", "contact"];
+  const items = ["home", "about", "projects", "contact"];
   return (
     <ul className={`nav ${isNavOpen && "min-nav"}`}>
       {items.map((item) => (

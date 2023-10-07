@@ -57,14 +57,14 @@ const App = () => {
         databaseSkills={databaseSkills}
       />
       <About />
-      <div className="footer">
+      <div className="footer" id="contact">
         <div className="footer-top">
           <h3>Contact</h3>
           <p>Hit me up!</p>
           <div className="contact">
             <div className="contact-box">
               <a href="" className="box-icon">
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faEnvelope} className="fa" />
               </a>
               <div className="box-dec">
                 <h4>Mail</h4>
@@ -79,7 +79,7 @@ const App = () => {
             </div>
             <div className="contact-box">
               <a href="" className="box-icon">
-                <FontAwesomeIcon icon={faTelegram} />
+                <FontAwesomeIcon icon={faTelegram} className="fa" />
               </a>
               <div className="box-dec">
                 <h4>Telegram</h4>

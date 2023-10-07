@@ -181,13 +181,13 @@ h3 span {
   gap: 10px;
   align-items: center;
 }
-.contact-box .box-icon {
-  padding: 6px;
+.contact-box .box-icon .fa {
   color: lightseagreen;
-  font-size: 18px;
-  border-radius: 100px;
-  /* text-align: center; */
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  border-radius: 100%;
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+  padding: 6px;
 }
 .contact-box .box-dec {
   display: flex;
@@ -213,7 +213,7 @@ h3 span {
 .footer .copy-right p {
   color: white;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
 }
 @media only screen and (max-width: 780px) {
   .about,
