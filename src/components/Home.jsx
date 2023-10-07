@@ -11,7 +11,7 @@ const Home = ({ links }) => {
             Hi, I{"'"}m Daniel Endaylalu. A dedicated and passionate{" "}
             <span>Full-stack MERN</span> Developer.
           </p>
-          <HomeLinks links={links} />
+          <HomeLinks links={links} className="md hover black" />
         </div>
         <div className="cover home-cover">
           <img src={profile} alt="illustration" />

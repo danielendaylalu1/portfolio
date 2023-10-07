@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const HomeLinks = ({ links }) => {
+const HomeLinks = ({ links, className }) => {
   return (
-    <div className="links">
+    <div className={`links`}>
       {links.map((link) => (
         <a
           href={link.link}
           target="_blank"
           rel="noopener noreferrer"
           key={link.link}
+          className={`${className}`}
         >
           <FontAwesomeIcon icon={link.icon} />
         </a>

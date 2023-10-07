@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
+  /* padding: 0 50px; */
 }
 h1,
 h2,
@@ -19,6 +20,21 @@ a {
 a {
   text-decoration: none;
 }
+.black {
+  color: #2d2e32;
+}
+.white {
+  color: white;
+}
+.small {
+  font-size: 20px;
+}
+.md {
+  font-size: 30px;
+}
+.hover:hover {
+  color: #0f0f0f;
+}
 .big-header {
   color: #2d2e32;
   font-size: 45px;
@@ -26,12 +42,10 @@ a {
 }
 .md-header {
   font-size: 30px;
-  margin: 10px 0;
 }
 .description {
   color: #555;
-  font-size: 16px;
-  margin-top: 15px;
+  font-size: 18px;
 }
 .description span {
   font-weight: 600;
@@ -46,10 +60,14 @@ h3 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 70px;
+  margin: 30px 0;
 }
 .header {
   max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .cover {
   width: 40%;
@@ -60,17 +78,11 @@ h3 span {
   width: 100%;
 }
 .links {
-  margin-top: 20px;
   display: flex;
   gap: 25px;
 }
 .links a {
-  font-size: 35px;
   cursor: pointer;
-  color: #2d2e32;
-}
-.links a:hover {
-  color: #0f0f0f;
 }
 
 .navbar {
@@ -78,7 +90,7 @@ h3 span {
   top: 0;
   width: 100%;
   background-color: white;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -144,6 +156,65 @@ h3 span {
   background-color: white;
   padding: 80px;
 }
+.footer .footer-top {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+}
+.footer-top h3 {
+  font-size: 16px;
+  color: rgb(15, 161, 71);
+}
+.footer-top p {
+  font-size: 17px;
+  font-weight: 600;
+}
+.footer-top .contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.contact .contact-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contact-box .box-icon {
+  padding: 6px;
+  color: lightseagreen;
+  font-size: 18px;
+  border-radius: 100px;
+  /* text-align: center; */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+.contact-box .box-dec {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.box-dec h4 {
+  font-size: 14px;
+}
+.box-dec a {
+  font-size: 13px;
+  color: #555;
+}
+.footer .copy-right {
+  background-color: #2d2e32;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.footer .copy-right p {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
 @media only screen and (max-width: 780px) {
   .about,
   .home {
@@ -169,7 +240,7 @@ h3 span {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
-    min-height: 85vh;
+    min-height: 90vh;
   }
   .navbar .min-nav {
     left: 0;
@@ -206,6 +277,9 @@ h3 span {
 @media only screen and (max-width: 300px) {
   .cover {
     min-width: 200px;
+  }
+  .description {
+    font-size: 15px;
   }
   .skill-icons .icon {
     width: 28px;

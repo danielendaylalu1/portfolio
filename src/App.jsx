@@ -21,6 +21,9 @@ import sql from "./assets/sql.svg";
 import Skills from "./components/Skills";
 import Home from "./components/Home";
 import About from "./components/About";
+import HomeLinks from "./components/HomeLinks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -54,6 +57,48 @@ const App = () => {
         databaseSkills={databaseSkills}
       />
       <About />
+      <div className="footer">
+        <div className="footer-top">
+          <h3>Contact</h3>
+          <p>Hit me up!</p>
+          <div className="contact">
+            <div className="contact-box">
+              <a href="" className="box-icon">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+              <div className="box-dec">
+                <h4>Mail</h4>
+                <a
+                  href="https://t.me/Daylalu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  endaylaludaniel@gmail.com
+                </a>
+              </div>
+            </div>
+            <div className="contact-box">
+              <a href="" className="box-icon">
+                <FontAwesomeIcon icon={faTelegram} />
+              </a>
+              <div className="box-dec">
+                <h4>Telegram</h4>
+                <a
+                  href="https://t.me/Daylalu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://t.me/Daylalu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="copy-right">
+          <p>Copyright &copy; 2023. All rights are reserved</p>
+          <HomeLinks links={links} className="small white" />
+        </div>
+      </div>
     </div>
   );
 };
