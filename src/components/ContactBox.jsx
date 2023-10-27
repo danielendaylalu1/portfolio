@@ -6,14 +6,14 @@ const ContactBox = () => {
     {
       icon: faEnvelope,
       link: "https://t.me/Daylalu",
-      header: "Mail",
+      header: "E-Mail",
       name: "endaylaludaniel@gmail.com",
     },
     {
       icon: faTelegram,
       link: "https://t.me/Daylalu",
       header: "Telegram",
-      name: "endaylaludaniel@gmail.com",
+      name: "t.me/Daylalu",
     },
   ];
   return (
