@@ -5,7 +5,7 @@ const ContactBox = () => {
   const icons = [
     {
       icon: faEnvelope,
-      link: "https://t.me/Daylalu",
+      link: "endaylaludaniel@gmail.com",
       header: "E-Mail",
       name: "endaylaludaniel@gmail.com",
     },
@@ -21,12 +21,23 @@ const ContactBox = () => {
       {icons.map((item) => {
         return (
           <div className="contact-box" key={item.header}>
-            <a href={item.link} className="box-icon">
+            <a
+              href={
+                item.header === "E-Mail" ? `mailto:${item.link}` : item.link
+              }
+              className="box-icon"
+            >
               <FontAwesomeIcon icon={item.icon} className="fa" />
             </a>
             <div className="box-dec">
               <h4>{item.header}</h4>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={
+                  item.header === "E-Mail" ? `mailto:${item.link}` : item.link
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {item.name}
               </a>
             </div>

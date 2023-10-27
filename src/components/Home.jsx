@@ -11,6 +11,10 @@ const Home = ({ links }) => {
             Hi, I{"'"}m Daniel Endaylalu. A dedicated and passionate{" "}
             <span>Full-stack MERN</span> Developer.
           </p>
+          <a href="mailto:your-email@gmail.com?subject=Hello&cc=another-email@gmail.com&bcc=third-email@gmail.com&body=Nice to meet you!">
+            Email me
+          </a>
+
           <HomeLinks links={links} className="md hover black" />
         </div>
         <div className="cover home-cover">
