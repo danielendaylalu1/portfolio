@@ -10,7 +10,7 @@ const HomeLinks = ({ links, className }) => {
           key={link.link}
           className={`${className}`}
         >
-          <FontAwesomeIcon icon={link.icon} />
+          <FontAwesomeIcon icon={link.icon} className="link-icon" />
         </a>
       ))}
     </div>
