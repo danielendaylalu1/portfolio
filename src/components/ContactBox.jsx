@@ -21,7 +21,7 @@ const ContactBox = () => {
       {icons.map((item) => {
         return (
           <div className="contact-box" key={item.header}>
-            <a href="" className="box-icon">
+            <a href={item.link} className="box-icon">
               <FontAwesomeIcon icon={item.icon} className="fa" />
             </a>
             <div className="box-dec">
